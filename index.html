@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Inovação e Sustentabilidade</title>
+    <style>
+        /* Variáveis de Cores (Paleta Verde e Azul) */
+        :root {
+            --primary-blue: #1A365D; /* Azul escuro corporativo/tecnológico */
+            --light-blue: #2B6CB0;   /* Azul intermediário */
+            --accent-green: #2F855A; /* Verde folha/campo */
+            --bright-green: #48BB78; /* Verde claro para destaques */
+            --bg-light: #F7FAFC;     /* Fundo claro */
+            --text-dark: #2D3748;    /* Texto principal */
+            --text-light: #FFFFFF;   /* Texto claro */
+        }
+
+        /* Configurações Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Navbar */
+        header {
+            background-color: var(--primary-blue);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: var(--bright-green);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--bright-green);
+        }
+
+        /* Hero Section (Banner Principal) */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-green) 100%);
+            color: var(--text-light);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--bright-green);
+            color: var(--primary-blue);
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #38A169;
+            transform: translateY(-2px);
+            color: var(--text-light);
+        }
+
+        /* Seções de Conteúdo */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: var(--bright-green);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        /* Grid de Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--light-blue);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--accent-green);
+            margin-bottom: 1rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-top: 4px solid var(--bright-green);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Simplificado para o exemplo */
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">🌱 Agrinho 2026</a>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#projeto">Nosso Projeto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Agrinho 2026</h1>
+            <p>Conectando a tecnologia do futuro com a sustentabilidade do campo. Descubra como a inovação pode transformar nossa relação com o meio ambiente.</p>
+            <a href="#sobre" class="btn">Saber Mais</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2 class="section-title">Sobre o Programa</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>O Programa Agrinho é uma iniciativa essencial que leva a discussão sobre sustentabilidade, cidadania e inovação para as escolas. Em 2026, nosso foco está em como as novas tecnologias digitais podem ajudar a preservar o meio ambiente e melhorar a produção agrícola de forma consciente.</p>
+        </div>
+    </section>
+
+    <section id="pilares" style="background-color: #EDF2F7;">
+        <div class="container">
+            <h2 class="section-title">Nossos Pilares</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Inovação Digital</h3>
+                    <p>Uso de ferramentas tecnológicas, robótica e programação para criar soluções inteligentes para o dia a dia no campo e na cidade.</p>
+                </div>
+                <div class="card" style="border-top-color: var(--bright-green);">
+                    <h3>Sustentabilidade</h3>
+                    <p>Práticas conscientes que visam a conservação da água, do solo e a redução de desperdícios para garantir o futuro das próximas gerações.</p>
+                </div>
+                <div class="card">
+                    <h3>Cidadania</h3>
+                    <p>Desenvolvimento do pensamento crítico e da responsabilidade social entre os jovens, transformando alunos em agentes de mudança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeto" class="container">
+        <h2 class="section-title">Nosso Projeto</h2>
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <p>Esta página foi desenvolvida para apresentar as ideias e soluções da nossa equipe para o concurso do Agrinho 2026. Aqui compartilhamos nossas pesquisas, códigos e o impacto que queremos gerar na nossa comunidade utilizando a tecnologia a favor da natureza.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Projeto Agrinho. Desenvolvido para o GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
